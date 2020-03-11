@@ -1,0 +1,535 @@
+html,body,*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 318px;
+
+    height: 318px;
+    border: 1px solid #ccc;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.box .content1{
+    padding: 30px;
+    display: none;
+    width:calc(100% - 60px);
+    height:calc(100% - 60px);
+}
+.box .content2{
+    padding: 30px;
+    position: relative;
+    display: none;
+    width:calc(100% - 60px);
+    height:calc(100% - 60px);
+}
+.box .content3{
+    padding: 30px 0;
+    position: relative;
+    display: none;
+    width:100%;
+    height:calc(100% - 60px);
+}
+.box .content4{
+    padding-top: 30px;
+
+    position: relative;
+    width:100%;
+    height:calc(100% - 30px);
+}
+.box .content1 .img{
+   
+    width: 100%;
+    height: 64px;
+    position: relative;
+    overflow: hidden;
+}
+.box .content2 .img{
+   
+    width: 100%;
+    height: 64px;
+    position: relative;
+    overflow: hidden;
+}
+.box .content1 .img .headimg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 64px;
+    height: 64px;
+}
+.box .content2 .img .headimg{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 64px;
+    height: 64px;
+}
+.box .content1 .name{
+    width: 100%;
+    height: 25px;
+    padding-bottom: 5px;
+    margin-top: 100px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.box .content1 .possword{
+    width: 100%;
+    height: 25px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.box .content1 .nameimg{
+    height: 25px;
+    float: left;
+}
+.box .content1 .posswordimg{
+    height: 25px;
+    float: left;
+}
+.box .content1 .nameimg img{
+    height: 100%;
+}
+.box .content1 .posswordimg img{
+    height: 100%;
+}
+.box .content1  .input{
+    width: calc(100% - 35px);
+    height: 25px;
+    float: right;
+}
+.box .content1  .input input{
+    height: 25px;
+    border: none;
+    width: 100%;
+    outline-style: none;
+}
+.box .design{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    height: 30px;
+    overflow: hidden;
+
+}
+.box .look{
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+    height: 30px;
+    overflow: hidden;
+
+}
+.box .look1{
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    height: 30px;
+    overflow: hidden;
+
+}
+.box .design .button{
+    width: 50%;
+    height: 30px;
+    line-height: 30px !important;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    line-height: 40px;
+    color: #fff;
+    background:rgba(1,82,180,1);
+    border-radius:44px;
+    box-shadow:0px 2px 4px 0px rgba(11,108,225,0.5);
+}
+.box .look .button{
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    line-height: 30px;
+    color: #fff;
+    background:rgba(1,82,180,1);
+    border-radius:44px;
+    box-shadow:0px 2px 4px 0px rgba(11,108,225,0.5);
+}
+.box .look1 .button{
+    width: 50%;
+    height: 30px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    line-height: 30px;
+    color: #fff;
+    background:rgba(1,82,180,1);
+    border-radius:44px;
+    box-shadow:0px 2px 4px 0px rgba(11,108,225,0.5);
+}
+.back{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ccc;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    border-radius: 20px;
+}
+.box .content3 .head{
+    padding: 20px 70px;
+    height: 30px;
+    position: relative;
+    width: calc(100% - 140px);
+  
+}
+.box .content4 .head{
+    padding: 0px 50px 0px 90px;
+    overflow: hidden;
+    font-size: 14px;
+    position: relative;
+    width: calc(100% - 140px);
+  
+}
+.box .head .search{
+ width: 100%;
+ overflow: hidden;
+ height: 30px;
+
+ border: 1px solid #ccc;
+ background:rgba(235,243,255,1);
+}
+.box .head .search input{
+    float: left;
+    background:rgba(235,243,255,1);
+    width: calc(100% - 41px);
+    border: none;
+    outline-style: none;
+    text-indent: 0.5em;
+    height: 100%;
+
+}
+.box .head .search  .img{
+    height: 100%;
+    float: right;
+    width: 40px;
+    position: relative;
+    border-left: 1px solid #ccc;
+}
+.box .head .search  .img img{
+    height: 80%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+.sm{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    height: 25px;
+    bottom: 0;
+    margin: auto;
+
+}
+.content4 .sm{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    height: 50px;
+    bottom: 0;
+    margin: auto;
+
+}
+.icon{width:25px;height:25px;position:relative}
+.icon .b{border:2px solid #666;width:100%;height:100%;border-radius:3px}
+.icon .h{background-color:#fff;width:116%;height:49%;position:absolute;left:0;top:32%}
+.icon .s{background-color:#fff;width:49%;height:116%;position:absolute;left:32%;top:0}
+.icon .z{background-color:#666;width:65%;height:2px;line-height:0;font-size:0;position:absolute;left:22%;top:53%}
+.content3 .linebox{
+    padding: 30px 30px 10px 30px;
+    width: calc(100% - 60px);
+}
+.content3 .linebox .line{
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.content4 .linebox{
+    padding: 0 30px;
+    width: calc(100% - 60px);
+}
+.content4 .linebox .line{
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.content3 ul{
+    list-style: none;
+    padding: 0 10px;
+    width: calc(100% -20px);
+    overflow: hidden;
+}
+.content3 ul li{
+    float: left;
+    line-height: 25px;
+    font-size: 14px;
+    width: 50%;
+   
+}
+.content3 ul li .key{
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+}
+.content3 ul li .value{
+    display: inline-block;
+    width: 60%;
+    text-align: left;
+}
+.content4 .nowdata{
+    position: absolute;
+    left: 0;
+    top: -20px;
+    bottom: 0;
+    height: 0px;
+    margin: auto;
+}
+.container{
+    
+    padding:0 0px 0 30px;
+    margin-top: 10px;
+    width:  calc(100% - 60px);
+}
+.table1{
+
+    padding:0 0px 0 30px;
+   
+    width:  calc(100% - 60px);
+    height: 65px;
+    overflow:scroll
+    
+}
+.table2{
+
+    padding:0 0px 0 30px;
+   
+    width:  calc(100% - 30px);
+    height: 30px;
+    
+}
+table {
+    width: 100%;
+                     /*设置相邻单元格的边框间的距离*/
+                    border-spacing: 0;
+                    /*表格设置合并边框模型*/
+                    border-collapse: collapse;
+                    text-align: center;
+               }
+                /*关键设置 tbody出现滚动条*/
+               table tbody {
+                    display: block;
+                    overflow-y: scroll;
+               }
+                
+               table thead,
+                tbody tr {
+                     display: table;
+                     width: 100%;
+                  table-layout: fixed;
+                 }
+                /*关键设置：滚动条默认宽度是16px 将thead的宽度减16px*/
+                table thead {
+         
+                }
+                
+                
+               table thead th {
+                    background: #ccc;
+                 }
+.table input{
+        width: 100%;
+        border: none;
+        height: 30px;
+        background-color: pink;
+        text-align: center;
+
+}
+.table tr{
+    height: 30px;
+
+}
+td{
+    height: 30px;
+}
+.pre{
+    font-size: 13px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    width: 80px;
+    height: 20px;
+    color:rgba(255,255,255,1);
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    background:rgba(11,108,225,1);
+box-shadow:0px 4px 8px 0px rgba(11,108,225,0.5);
+}
+.tip{
+    z-index: 99;
+    width: 220px;
+    height: 220px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.tip .headtip{
+    width: 100%;
+    color: #fff;
+    background-color:rgba(11,108,225,1) ;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.tip .tipcontent{
+    height: 189px;
+    width: 100%;
+    text-align: center;
+    line-height: 189px;
+}
+.tip .yes{
+    font-size: 13px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    height: 20px;
+    color:rgba(255,255,255,1);
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    background:rgba(11,108,225,1);
+box-shadow:0px 4px 8px 0px rgba(11,108,225,0.5);
+}
+.tip .no{
+    font-size: 13px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 80px;
+    height: 20px;
+    color:rgba(255,255,255,1);
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    background:#ccc;
+box-shadow:0px 4px 8px 0px #ccc;
+}
+.tip1{
+    z-index: 99;
+    width: 220px;
+    display: none;
+    height: 220px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+td{
+    background: yellow;
+}
+.tip1 .headtip{
+    width: 100%;
+    color: #fff;
+    background-color:rgba(11,108,225,1) ;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.tip1 .tipcontent{
+    height: 189px;
+    width: 100%;
+    text-align: center;
+    line-height: 189px;
+}
+.tip1 .yes{
+    font-size: 13px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+    height: 20px;
+    color:rgba(255,255,255,1);
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    background:rgba(11,108,225,1);
+box-shadow:0px 4px 8px 0px rgba(11,108,225,0.5);
+}
+.tip1 .no{
+    font-size: 13px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 80px;
+    height: 20px;
+    color:rgba(255,255,255,1);
+    text-align: center;
+    line-height: 20px;
+    border-radius: 10px;
+    background:#ccc;
+box-shadow:0px 4px 8px 0px #ccc;
+}
+.tip1 input{
+    width: 50px;
+    text-align: center;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 30;
+    opacity: 0.3;
+}

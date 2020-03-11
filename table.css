@@ -1,0 +1,78 @@
+body,html{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.box{
+ width: 100%;
+position: relative;
+overflow: hidden;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.lf{
+    width: 10%;
+    height: 100%;
+    float: left;
+    position: relative;
+   overflow: hidden;
+}
+.table{
+   
+float: right;
+width: 70%;
+}
+th{
+    height: 40px;
+
+}
+td{
+    height: 40px;
+    text-align: center;
+    background-color: yellow;;
+    
+ 
+}
+input{
+    width: 100%;
+    border: none;
+    height: 100%;
+    background-color: pink;
+    text-align: center;
+}
+.head{
+  float: right;
+  width: 20%;
+  height: 100%;
+  text-align: right;
+   
+    
+}
+
+
+.pj{
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 10%;
+   text-align: center;
+}
+.page{
+    width: calc(100% -70%);
+    padding-left: 70%;
+    height: 10%;
+    margin-top: 20px;
+}
+.page1>span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color: blue;
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+
+}
