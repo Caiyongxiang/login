@@ -16,7 +16,7 @@ html,body,*{
 }
 .box .content1{
     padding: 30px;
-    display: none;
+    display: block;
     width:calc(100% - 60px);
     height:calc(100% - 60px);
 }
@@ -36,7 +36,7 @@ html,body,*{
 }
 .box .content4{
     padding-top: 30px;
-
+    display: none;
     position: relative;
     width:100%;
     height:calc(100% - 30px);
@@ -334,7 +334,7 @@ html,body,*{
    
     width:  calc(100% - 60px);
     height: 65px;
-    overflow:scroll
+    overflow:auto
     
 }
 .table2{
@@ -345,7 +345,7 @@ html,body,*{
     height: 30px;
     
 }
-table {
+.table1 table {
     width: 100%;
                      /*设置相邻单元格的边框间的距离*/
                     border-spacing: 0;
@@ -354,22 +354,24 @@ table {
                     text-align: center;
                }
                 /*关键设置 tbody出现滚动条*/
-               table tbody {
+                .table1 table tbody {
                     display: block;
                     overflow-y: scroll;
                }
                 
-               table thead,
+               .container table thead,
+                tbody tr {
+                     display: table;
+                     width: 100%;
+                  table-layout: fixed;
+                 }
+               .table1 table thead,
                 tbody tr {
                      display: table;
                      width: 100%;
                   table-layout: fixed;
                  }
                 /*关键设置：滚动条默认宽度是16px 将thead的宽度减16px*/
-                table thead {
-         
-                }
-                
                 
                table thead th {
                     background: #ccc;
