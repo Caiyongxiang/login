@@ -345,7 +345,7 @@ html,body,*{
     height: 30px;
     
 }
-.table1 table {
+ table {
     width: 100%;
                      /*设置相邻单元格的边框间的距离*/
                     border-spacing: 0;
