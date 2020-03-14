@@ -91,7 +91,15 @@ var data1 = [
         gl:'1211'
     }
 ]
-// 创建表格
+var s = JSON.stringify(data1);
+var s1 = JSON.parse(s);
+var data = s1.splice(0,6);
+var datanum;
+if(data1.length<=6){
+    datanum = data1.length;
+}else{
+   datanum = 6;
+}
 function creat(){
     
     var table = document.getElementsByClassName("table")[0];
@@ -124,6 +132,7 @@ function creat(){
     table2.querySelectorAll("td")[2].innerHTML = gpj;
 }
 creat();
+var sad;
 function pre(){
     $('.tip').show();
     $('.cover').show();
