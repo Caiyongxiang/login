@@ -215,20 +215,13 @@ function design(){
 function look1(){
     $('.content4').show();
     $('.content2').hide();
+    document.getElementById('#ip2').focus();
 
     console.log("sad")
 }
 function look(){
     $('.content3').show();
     $('.content2').hide();
+    document.getElementById('#ip1').focus();
 }
-function click(){
-    console.log( $("#ip1"))
-}
-$("#ip1").focus(function(){
-    document.activeElement.blur();
-})
 
-$("#ip1").onclcik(function(){
-    console.log($("#ip1"))
-})
