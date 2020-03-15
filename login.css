@@ -16,10 +16,10 @@
     margin: auto;
 }
 .box .content1{
-    padding:10% 20%;
+    padding:15% 4%;
     display: block;
-    width:60%;
-    height:80%;
+    width:92%;
+    height:70%;
 }
 .box .content2{
     padding:10% 20%;
@@ -36,16 +36,26 @@
     height:90%;
 }
 .box .content4{
-    padding-top: 0.5rem;
+    padding-top: 5%;
     display: none;
     position: relative;
     width:100%;
-    height:calc(100% - 0.5rem);
+    height:95%;
+}
+.treei{
+    display: flex;
+}
+.zr{
+    flex: 2;
+    /* width: calc(100%  - 2rem);
+    float: right;
+    height: 2rem; */
 }
 .box .content1 .img{
-   
+   flex: 1;
     /* width: 100%; */
-    height: 2rem;
+    height: 1.8rem;
+    width: 1.8rem;
     position: relative;
     overflow: hidden;
 }
@@ -57,10 +67,7 @@
     overflow: hidden;
 }
 .box .content1 .img .headimg{
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
+
     width: 1.8rem;
     height: 1.8rem;
 }
@@ -76,9 +83,10 @@
     width: 100%;
     height: 0.6rem;
     padding-bottom: 0.01rem;
-    margin-top: 1rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.1rem;
     overflow: hidden;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 0.02rem solid #ccc;
 }
 
 .box .content1 .possword{
@@ -87,7 +95,7 @@
     padding-bottom: 0.01rem;
     margin-top: 0.2rem;
     overflow: hidden;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 0.02rem solid #ccc;
 }
 .box .content1 .nameimg{
     height: 0.5rem;
@@ -105,7 +113,7 @@
     height: 100%;
 }
 .box .content1  .input{
-    width: calc(100% - 0.6rem);
+    width: 80%;
     height: 0.6rem;
     border: none;
     outline-style: none;
@@ -196,6 +204,7 @@
     position: absolute;
     top: 0.1rem;
     left: 0.1rem;
+    z-index: 80;
     background: #ccc;
     width: 1.5rem;
     font-size: 0.4rem;;
@@ -209,15 +218,15 @@
     padding: 0.2rem 1.32rem;
     height: 30px;
     position: relative;
-    width: calc(100% - 2.64rem);
+    width: 3rem;
   
 }
 .box .content4 .head{
-    padding: 0 1.1rem 0px 1.76rem;
+    padding: 0 15% 0px 30%;
     overflow: hidden;
     font-size: 0.25rem;
     position: relative;
-    width: calc(100% - 2.86rem);
+    width: 55%;
   
 }
 .box .head .search{
@@ -231,7 +240,7 @@
 .box .head .search input{
     float: left;
     background:rgba(235,243,255,1);
-    width: calc(100% - 0.71rem);
+    width: 70%;
     border: none;
     outline-style: none;
     text-indent: 0.5em;
@@ -241,7 +250,7 @@
 .box .head .search  .img{
     height: 100%;
     float: right;
-    width: 0.7rem;
+    width: 29%;
     position: relative;
     border-left: 0.01rem solid #ccc;
 }
@@ -257,9 +266,9 @@
 .sm{
     position: absolute;
     right: 0.25rem;
-    top: -0.05rem;
+    top: 0 rem;
     height: 0.5rem;
-    bottom: 0;
+    bottom: 0.1rem;
     margin: auto;
 
 }
@@ -279,7 +288,7 @@
 .icon .z{background-color:#666;width:65%;height:2px;line-height:0;font-size:0;position:absolute;left:22%;top:53%}
 .content3 .linebox{
     padding: 0.3rem  0.3rem 10px  0.3rem;
-    width: calc(100% - 0.6rem);
+    width: 90%
 }
 .content3 .linebox .line{
     height: 0.6rem;
@@ -287,24 +296,14 @@
     width: 100%;
     text-align: center;
     font-size: 0.5rem;
-    border-bottom: 0.01rem solid #ccc;
+    border-bottom: 0.02rem solid #ccc;
 }
-.content4 .linebox{
-    padding: 0 0.4rem;
-    width: calc(100% - 0.8rem);
-}
-.content4 .linebox .line{
-    height: 0.6rem;
-    line-height: 0.6rem;
-    width: 100%;
-    font-size: 0.5rem;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-}
+
+
 .content3 ul{
     list-style: none;
     padding: 0 0.2rem;
-    width: calc(100% -0.4rem);
+    width:96%;
     overflow: hidden;
 }
 .content3 ul li{
@@ -317,35 +316,47 @@
 .content3 ul li .key{
     display: inline-block;
     width: 40%;
-    font-size: 0.25rem;
+    font-size: 0.2rem;
     text-align: right;
 }
 .content3 ul li .value{
     display: inline-block;
     width: 60%;
-    font-size: 0.25rem;
+    font-size: 0.2rem;
     text-align: left;
 }
 .content4 .nowdata{
-    position: absolute;
-    left: 0;
-    top: -0.3rem;
-    bottom: 0;
-    height: 0px;
-    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 0.3rem;
+
+}
+
+.content4 .headtopword{
+    width: 100%;
+    text-align: center;
+    font-size: 0.3rem;
+
+}
+
+.content4 .headbottomword{
+    width: 100%;
+    text-align: center;
+    font-size: 0.3rem;
+
 }
 .container{
     font-size: 0.4rem;
     padding:0 0px 0 0.4rem;
     margin-top: 0.1rem;
-    width:  calc(100% - 0.8rem);
+    width: 87%;
 }
 .table1{
 
     padding:0 0 0 0.4rem;
     font-size: 0.3rem;
-    width:  calc(100% - 0.8rem);
-    height: 1.32rem;
+    width:  87%;
+    height: 1.29rem;
     overflow:scroll
     
 }
@@ -353,7 +364,7 @@
     font-size: 0.3rem;
     padding:0 0px 0 0.4rem;
    
-    width:  calc(100% - 0.4rem);
+    width:  87%;
     height: 0.3rem;
     
 }
@@ -387,6 +398,7 @@ table {
                 
                table thead th {
                     background: #ccc;
+                    font-size: 0.3rem;
                  }
 .table input{
         width: 100%;
@@ -420,8 +432,8 @@ box-shadow:0px 0.05rem 0.1rem 0px rgba(11,108,225,0.5);
 }
 .tip{
     z-index: 99;
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     border: 0.01rem solid #ccc;
     background-color: #fff;
     position: absolute;
@@ -442,11 +454,11 @@ box-shadow:0px 0.05rem 0.1rem 0px rgba(11,108,225,0.5);
     border-bottom: 0.01rem solid #ccc;
 }
 .tip .tipcontent{
-    height: 4.4rem;
+    height: 3.4rem;
     width: 100%;
     text-align: center;
-    font-size: 0.5rem;
-    line-height: 4.4rem;
+    font-size: 0.4rem;
+    line-height: 3.4rem;
 }
 .tip .yes{
     font-size: 0.4rem;
@@ -476,11 +488,14 @@ box-shadow:0px 0.05rem 0.05rem 0px rgba(11,108,225,0.5);
     background:#ccc;
 box-shadow:0px 0.05rem 0.05rem 0px #ccc;
 }
+.table2 .table2{
+    width: 100%;
+}
 .tip1{
     z-index: 99;
-    width: 5rem;
+    width: 4rem;
     display: none;
-    height: 5rem;
+    height: 4rem;
     border: 0.01rem solid #ccc;
     background-color: #fff;
     position: absolute;
@@ -504,10 +519,10 @@ td{
     border-bottom: 0.01rem solid #ccc;
 }
 .tip1 .tipcontent{
-    height: 4.4rem;
+    height: 3.4rem;
     width: 100%;
     text-align: center;
-    line-height: 189px;
+    line-height: 2.4rem;
 }
 .tip1 .yes{
     font-size: 0.4rem;
@@ -550,4 +565,7 @@ box-shadow:0px 0.05rem 0.05rem 0px #ccc;
     background-color: #000;
     z-index: 30;
     opacity: 0.3;
+}
+input{
+    font-size: 0.3rem;
 }

@@ -131,7 +131,7 @@ function creat(){
     table2.querySelectorAll("td")[1].innerHTML = zpj;
     table2.querySelectorAll("td")[2].innerHTML = gpj;
 }
-creat();
+
 var sad;
 function pre(){
     $('.tip').show();
@@ -179,6 +179,7 @@ function yes1(){
     }
      
 }
+creat();
 var aa;
 var bb;
 $('.tip').hide();
@@ -192,8 +193,9 @@ $('.table').find('td').click(function(){
      bb = $(this).index();
 
   
-    console.log()
+    console.log("dasdasd")
 })
+console.log($('.table').find('td'))
 function back4(){
     $('.content2').show();
     $('.content4').hide();
@@ -213,9 +215,20 @@ function design(){
 function look1(){
     $('.content4').show();
     $('.content2').hide();
+
     console.log("sad")
 }
 function look(){
     $('.content3').show();
     $('.content2').hide();
 }
+function click(){
+    console.log( $("#ip1"))
+}
+$("#ip1").focus(function(){
+    document.activeElement.blur();
+})
+
+$("#ip1").onclcik(function(){
+    console.log($("#ip1"))
+})
