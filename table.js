@@ -215,8 +215,16 @@ function design(){
 function look1(){
     $('.content4').show();
     $('.content2').hide();
-    document.getElementById('#ip2').focus();
-    document.getElementById('#ip2').setAttribute('readOnly','readOnly');
+    document.getElementById('#ip2').focus(
+        function(){
+            document.getElementById('#ip2').setAttribute('readonly', 'readonly');
+            setTimeout(() => {
+                document.getElementById('#ip2').removeAttribute('readonly');
+              }, 200);
+            
+        }
+    );
+    // document.getElementById('#ip2').blur();
 
     console.log("sad")
 }
@@ -224,6 +232,6 @@ function look(){
     $('.content3').show();
     $('.content2').hide();
     document.getElementById('#ip1').focus();
-    document.getElementById('#ip1').setAttribute('readOnly','readOnly');
+    // document.getElementById('#ip1').blur();
 }
 
