@@ -215,16 +215,17 @@ function design(){
 function look1(){
     $('.content4').show();
     $('.content2').hide();
-    document.getElementById('#ip2').focus(
-        function(){
-            document.getElementById('#ip2').setAttribute('readonly', 'readonly');
+    document.getElementById('#ip2').focus();
+    window.addEventListener('resize', () => {
+        const activeElement = document.activeElement
+        if (activeElement.tagName === 'INPUT' || activeElement.tagName === 'TEXTAREA') {
             setTimeout(() => {
-                document.getElementById('#ip2').removeAttribute('readonly');
-              }, 200);
-            
-        }
-    );
-    // document.getElementById('#ip2').blur();
+              activeElement.scrollIntoView()
+            }, 100)
+          }
+    })
+
+
 
     console.log("sad")
 }
@@ -232,6 +233,15 @@ function look(){
     $('.content3').show();
     $('.content2').hide();
     document.getElementById('#ip1').focus();
-    // document.getElementById('#ip1').blur();
+    window.addEventListener('resize', () => {
+        const activeElement = document.activeElement
+        if (activeElement.tagName === 'INPUT' || activeElement.tagName === 'TEXTAREA') {
+            setTimeout(() => {
+              activeElement.scrollIntoView()
+            }, 100)
+          }
+    })
+
+
 }
 
