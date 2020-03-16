@@ -216,6 +216,7 @@ function look1(){
     $('.content4').show();
     $('.content2').hide();
     document.getElementById('#ip2').focus();
+    document.getElementById('#ip2').setAttribute('readOnly','readOnly');
 
     console.log("sad")
 }
@@ -223,5 +224,6 @@ function look(){
     $('.content3').show();
     $('.content2').hide();
     document.getElementById('#ip1').focus();
+    document.getElementById('#ip1').setAttribute('readOnly','readOnly');
 }
 
